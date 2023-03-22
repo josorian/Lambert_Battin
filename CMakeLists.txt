@@ -3,4 +3,4 @@ project(Lambert_Battin)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Lambert_Battin vector.cpp vector.h testUnitarios.cpp)
+add_executable(Lambert_Battin vector.cpp vector.h testUnitarios.cpp seebatt.cpp seebatt.h seebattk.cpp seebattk.h)
