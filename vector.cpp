@@ -5,7 +5,7 @@
 #include "vector.h"
 
 //Documentar
-double norm(double v[], int n) {
+double norm(vector<double> v, int n) {
     double suma = 0;
     if (n <= 0) {
         throw "Empty vector";
@@ -16,7 +16,7 @@ double norm(double v[], int n) {
     return sqrt(suma);
 }
 
-double dot(double *v1, double *v2,int n1,int n2) {
+double dot(vector<double> v1, vector<double> v2, int n1, int n2) {
     double suma = 0;
     if (n1!=n2) {
         throw "size diferent";
@@ -27,7 +27,7 @@ double dot(double *v1, double *v2,int n1,int n2) {
     return suma;
 }
 
-vector<double> cross(double *v1, double *v2, int n1, int n2) {
+vector<double> cross(vector<double> v1, double *v2, int n1, int n2) {
     if (n1!=n2) {
         throw "size diferent";
     }
